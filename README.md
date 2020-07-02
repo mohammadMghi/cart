@@ -7,9 +7,27 @@ This package is for add cart feature to laravel application.
 If you have shop application and wanna add Cart to project and make some changes in package , this is usful package for you.
 
 To add package to your project writte down the command to the CLI ... So application will be added to Vendor path of your project as automatically:
+	
 	Command
+	//This package hasn't command to use with composer you must download it and copy , paste to Vendor path
+	
 
+Add to Config\app.php , providers array  :
+	
+	Ramin\Cart\CartServiceProvider::class
 
+Also add this to composer.json:
+	
+    "autoload": {
+    .
+    .
+    .
+	"psr-4": {
+            "App\\": "app/",
+  	        "Ramin\\Cart\\": "vendor/ramin/cart/src/"
+        }
+    }
+    
 Run Migration to add tables to the database :
    
 	php artisan run migration
