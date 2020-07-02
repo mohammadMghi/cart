@@ -20,19 +20,24 @@ Add new product to the cart :
 	$basketController->add($product->id , $quantity);
 
 To see all bascket :
+
 	$basketController = new BasketController();
 	$basketController->all();
 	
 If you want to Remove : 
+
 	$basketController = new BasketController();
 	$basketController->remove();
 
 To get specisic product :
+
 	$basketController = new BasketController();
 	$basketController->get($product);
 
 
 This Project work with the session and you can change storage to anything that will need  ... you may just change Vendor\Ramin\Cart\CartServiceProvicer - the method register() existed as below:
+
+
 	public function register()
  	{
      	    $this->app->bind(StorageInterface::class ,function($app){
