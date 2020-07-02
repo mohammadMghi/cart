@@ -1,0 +1,12 @@
+{
+    "name": "ramin/cart",
+    "description": "This package for is usful for any body need to add cart to own project.",
+    "authors": [
+        {
+            "name": "mohammad mghi",
+            "email": "mohammadmghig@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
+ 
