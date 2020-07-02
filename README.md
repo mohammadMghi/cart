@@ -34,17 +34,14 @@ To get specisic product :
 	$basketController = new BasketController();
 	$basketController->get($product);
 
-
 This Project work with the session and you can change storage to anything that will need  ... you may just change Vendor\Ramin\Cart\CartServiceProvicer - the method register() existed as below:
 
-
 	public function register()
- 	{
+        {
      	    $this->app->bind(StorageInterface::class ,function($app){
             return new SesstionStorage('cart');
-       } );
-    
-       }
+      	} );
+       	}
  
 Change SessionStorage to your storage like redis or database and etc.
 
