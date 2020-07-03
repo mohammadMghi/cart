@@ -4,7 +4,7 @@ This repository for package named Cart that is subset of ramin package... packag
 
 Hi guys
 This package is for add cart feature to laravel application.
-If you have shop application and wanna add Cart to project and make some changes in package , this is usful package for you.
+If you have shop application and want to add Cart to project and make some changes in package , this is usful package for you.
 
 To add package to your project writte down the command to the CLI ... So application will be added to Vendor path of your project as automatically:
 	
